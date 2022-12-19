@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="73" id="KGk-i7-Jjw" customClass="MessageCell" customModule="ChatsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-OR-DWe">
+                        <rect key="frame" x="10" y="10" width="303" height="53"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.club.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WHv-OB-ame">
+                                <rect key="frame" x="0.0" y="1" width="40" height="38"/>
+                                <color key="tintColor" red="0.95662075281143188" green="0.82682603597640991" blue="0.94900721311569214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ioI-0R-n5F"/>
+                                    <constraint firstAttribute="width" constant="40" id="yWx-tz-7mm"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V0-VV-cP3">
+                                <rect key="frame" x="60" y="0.0" width="183" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APk-Iw-SnQ">
+                                        <rect key="frame" x="10" y="10" width="163" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="APk-Iw-SnQ" secondAttribute="bottom" constant="10" id="2RE-a0-8jq"/>
+                                    <constraint firstItem="APk-Iw-SnQ" firstAttribute="leading" secondItem="7V0-VV-cP3" secondAttribute="leading" constant="10" id="GZ7-Fe-8a4"/>
+                                    <constraint firstItem="APk-Iw-SnQ" firstAttribute="top" secondItem="7V0-VV-cP3" secondAttribute="top" constant="10" id="VRZ-1i-ebe"/>
+                                    <constraint firstItem="APk-Iw-SnQ" firstAttribute="top" secondItem="7V0-VV-cP3" secondAttribute="top" constant="10" id="ZjN-OV-oea"/>
+                                    <constraint firstItem="APk-Iw-SnQ" firstAttribute="leading" secondItem="7V0-VV-cP3" secondAttribute="leading" constant="10" id="dcG-aI-uDs"/>
+                                    <constraint firstAttribute="trailing" secondItem="APk-Iw-SnQ" secondAttribute="trailing" constant="10" id="hPK-nC-N1R"/>
+                                    <constraint firstAttribute="bottom" secondItem="APk-Iw-SnQ" secondAttribute="bottom" constant="10" id="pLU-KO-WtG"/>
+                                    <constraint firstAttribute="trailing" secondItem="APk-Iw-SnQ" secondAttribute="trailing" constant="10" id="vSN-WL-83Z"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iYJ-Vj-17G">
+                                <rect key="frame" x="263" y="1.5" width="40" height="37.5"/>
+                                <color key="tintColor" red="0.96611279250000004" green="0.36971868870000002" blue="0.8871277514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="IhW-CG-9Td"/>
+                                    <constraint firstAttribute="height" constant="40" id="yva-Ea-4dj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Pq-OR-DWe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Qo1-m1-MT7"/>
+                    <constraint firstAttribute="bottom" secondItem="9Pq-OR-DWe" secondAttribute="bottom" constant="10" id="hC9-8z-1kl"/>
+                    <constraint firstItem="9Pq-OR-DWe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jOr-sW-2LC"/>
+                    <constraint firstAttribute="trailing" secondItem="9Pq-OR-DWe" secondAttribute="trailing" constant="10" id="n6h-Qb-vT4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="APk-Iw-SnQ" id="jua-u2-UlT"/>
+                <outlet property="leftImage" destination="WHv-OB-ame" id="AJz-gc-Bgx"/>
+                <outlet property="messageBubble" destination="7V0-VV-cP3" id="mUL-zV-DXI"/>
+                <outlet property="rightImage" destination="iYJ-Vj-17G" id="dgj-jG-UrG"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="128.23660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="suit.club.fill" catalog="system" width="128" height="123"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="107"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
