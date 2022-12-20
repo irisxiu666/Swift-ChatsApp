@@ -10,7 +10,13 @@ target 'ChatsApp' do
   pod 'FirebaseAuth', '~> 8.0.0'
   pod 'FirebaseFirestore', '~> 8.0.0'
   
-  pod 'FBSDKLoginKit/Swift'
-  pod 'FBSDKCoreKit/Swift'
+#  pod 'FBSDKCoreKit/Swift'
+#  pod 'FBSDKLoginKit/Swift'
+#  pod 'FBSDKShareKit/Swift'
+  
+   pod 'FacebookCore'  #(0.5.0)
+   pod 'FacebookLogin' #(0.5.0)
+   pod 'FBSDKCoreKit', '~> 4.38.0'
+   pod 'FBSDKLoginKit', '~> 4.38.0'
   
 end

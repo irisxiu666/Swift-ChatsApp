@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import FBSDKLoginKit
 
 
 class ChatViewController: UIViewController {
@@ -99,6 +100,8 @@ class ChatViewController: UIViewController {
         do{
             try firebaseAuth.signOut()
             navigationController?.popToRootViewController(animated: true)
+            let loginManager = FBSDKLoginManager()
+            try loginManager.logOut()
         }catch let signOutError as NSError{
             print("sign out error is:\(signOutError)")
         }
